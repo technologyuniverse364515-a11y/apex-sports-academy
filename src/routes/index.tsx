@@ -18,14 +18,14 @@ export const Route = createFileRoute("/")({
 function Index() {
   // Redirect to the static, config-driven sports club site living in /public/sportsclub
   useEffect(() => {
-    window.location.replace("/sportsclub/index.html");
+    window.location.replace("sportsclub/index.html");
   }, []);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background">
       <p className="text-muted-foreground">
         Loading Apex Sports Academy…{" "}
-        <a href="/sportsclub/index.html" className="text-primary underline">
+        <a href="sportsclub/index.html" className="text-primary underline">
           Continue
         </a>
       </p>
